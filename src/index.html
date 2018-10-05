@@ -1,0 +1,25 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <title>FEEDBACK FORM</title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+        <body>
+            <div class="container">
+            
+                <h1>Collecting Feedback</h1>
+                <h3>Please answer the below questions</h3>
+                <div class = "message">
+                    {{text | safe}}
+                </div>
+                <form action="{{url_for('success')}}" method="POST">
+
+                    <input title="Your email will be safe with us" placeholder="Enter your email address" type="email" name="email_name" required> <br>
+                    <input title="Your data will be safe with us" placeholder="Enter your experience" type="text" name="users_feedback" required> <br>
+                    <button type="submmethodit">Submit</button>
+
+                </form>
+
+            </div>
+        </body>
+</html>
